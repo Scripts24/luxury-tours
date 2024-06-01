@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luxury Tours</title>
+    <!--Favicon-->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -65,10 +66,10 @@
                                                     class="bi bi-house-door-fill"></i></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#about">Nosotros</a>
+                                            <a class="nav-link" href="#about">Agencia</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Tours</a>
+                                            <a class="nav-link" href="#services">Servicios</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Paquetes</a>
@@ -79,10 +80,10 @@
                                                 FAQs
                                             </a>
                                             <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Agencia</a></li>
                                                 <li>
                                                     <a class="dropdown-item" href="#">Servicios</a>
                                                 </li>
-                                                <li><a class="dropdown-item" href="#">Agencia</a></li>
                                                 <li>
                                                     <a class="dropdown-item" href="#">Experiencia</a>
                                                 </li>
@@ -177,42 +178,98 @@
     <!--Inicio contenido principal-->
     <main>
         <!--Incio Nosotros-->
-        <section id="about">
-            <div class="about">
-                <h2 class="heading-about text-center text-uppercase fw-bold pb-3">Sobre nosotros</h2>
-                <p class="para-about text-center m-auto">Zombie ipsum reversus ab viral inferno, nam rick grimes malum
-                    cerebro.
-                    De carne lumbering animata corpora quaeritis. Summus brains sit​​.</p>
-                <div class="container about-content mt-5">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-12">
-                            <div class="about-img">
-                                <img src="img/nosotros/about1.jpg" class="img-fluid image-content">
-                            </div>
+        <section class="about" id="about">
+            <h2 class="heading-about d-block text-center text-uppercase fw-bold pb-3">Nuestra agencia</h2>
+            <p class="para-about text-center m-auto d-block">Zombie ipsum reversus ab viral inferno, nam rick grimes
+                malum
+                cerebro.
+                De carne lumbering animata corpora quaeritis. Summus brains sit​​.</p>
+            <div class="container about-content mt-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="about-img">
+                            <img src="img/nosotros/about1.jpg" class="img-fluid image-content">
                         </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="content-about">
-                                <h4 class="heading-content text-center fw-bold text-uppercase">Conócenos</h4>
-                                <p class="para-content-about">Zombie ipsum reversus ab viral inferno, nam rick grimes
-                                    malum
-                                    cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo
-                                    vel
-                                    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless
-                                    mortuis
-                                    soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat
-                                    cerebella viventium. Qui animated corpse.</p>
-                            </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="content-about">
+                            <h4 class="heading-content text-center fw-bold text-uppercase">Conócenos</h4>
+                            <p class="para-content-about">Zombie ipsum reversus ab viral inferno, nam rick grimes
+                                malum
+                                cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo
+                                vel
+                                maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless
+                                mortuis
+                                soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat
+                                cerebella viventium. Qui animated corpse.</p>
                         </div>
-                        <div class="col-lg-3 col-md-12">
-                            <div class="about-img">
-                                <img src="img/nosotros/about2.jpg" class="img-fluid image-content">
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="about-img">
+                            <img src="img/nosotros/about2.jpg" class="img-fluid image-content">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--Fin Nosotros-->
+
+        <!--Inicio Servicios-->
+        <section class="services text-center" id="services">
+            <h4 class="heading-sm  text-uppercase fw-bold pb-3">Servicios</h4>
+            <h2 class="heading-lg mb-5 text-uppercase fw-bold">viajes & tours</h2>
+
+            <div class="container container-services mt-4">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 px-lg-2">
+                        <div
+                            class="content-services bg-white d-flex justify-content-center align-items-center flex-column">
+                            <div class="img-container">
+                                <img src="img/servicios/mundo.png" class="img-services mb-1">
+                            </div>
+                            <h3 class="heading-tour fs-4">Diversos países</h3>
+                            <p class="para-tour">Zombie ipsum reversus ab viral inferno, nam rick grimes malum</p>
+                            <a href="#" class="btn-services text-white">Saber más</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 px-lg-2">
+                        <div
+                            class="content-services bg-white d-flex justify-content-center align-items-center flex-column">
+                            <div class="img-container">
+                                <img src="img/servicios/salud.png" class="img-services mb-1">
+                            </div>
+                            <h3 class="heading-tour fs-4">Seguro médico</h3>
+                            <p class="para-tour">Zombie ipsum reversus ab viral inferno, nam rick grimes malum</p>
+                            <a href="#" class="btn-services text-white">Saber más</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 px-lg-2">
+                        <div
+                            class="content-services bg-white d-flex justify-content-center align-items-center flex-column">
+                            <div class="img-container">
+                                <img src="img/servicios/guia.png" class="img-services mb-1">
+                            </div>
+                            <h3 class="heading-tour fs-4">Guía turístico</h3>
+                            <p class="para-tour">Zombie ipsum reversus ab viral inferno, nam rick grimes malum</p>
+                            <a href="#" class="btn-services text-white">Saber más</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 px-lg-2">
+                        <div
+                            class="content-services bg-white d-flex justify-content-center align-items-center flex-column">
+                            <div class="img-container">
+                                <img src="img/servicios/hotel.png" class="img-services mb-1">
+                            </div>
+                            <h3 class="heading-tour fs-4">Reserva de hotel</h3>
+                            <p class="para-tour">Zombie ipsum reversus ab viral inferno, nam rick grimes malum</p>
+                            <a href="#" class="btn-services text-white">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fin Servicios-->
+
 
     </main>
     <!--Fin contenido principal-->

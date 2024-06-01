@@ -192,7 +192,7 @@ nav .bi-list:hover {
     background-color: #074866;
 }
 
-/**NOSOTROS*/
+/**AGENCIA*/
 
 .about {
     width     : 100%;
@@ -201,7 +201,6 @@ nav .bi-list:hover {
 }
 
 .heading-about {
-    display : block;
     position: relative;
 }
 
@@ -226,7 +225,6 @@ nav .bi-list:hover {
 }
 
 .para-about {
-    display  : block;
     max-width: 1000px;
 }
 
@@ -244,6 +242,58 @@ nav .bi-list:hover {
 .heading-content {
     color  : #33075c;
     padding: 10px 20px;
+}
+
+/**SERVICIOS*/
+
+.services {
+    width  : 100%;
+    height : 100vh;
+    padding: 10px 0;
+}
+
+.heading-sm {
+    color: #33075c;
+}
+
+.content-services {
+    width        : 100%;
+    height       : auto;
+    padding      : 20px 14px;
+    border-radius: 15px;
+    transition   : .2s ease-in;
+}
+
+.content-services:hover {
+    transform : translateY(-10px);
+    box-shadow: 2px 2px 14px #074866 !important;
+    cursor    : pointer;
+}
+
+.img-services {
+    width : 100px;
+    height: 100px;
+}
+
+.heading-tour {
+    margin: 7px 0;
+    color : #074866;
+}
+
+.para-tour {
+    font-size: .8rem;
+    margin   : 8px 0;
+}
+
+.btn-services {
+    padding         : 10px 26px;
+    margin          : 10px 0;
+    background-color: #33075c;
+    transition      : .2s ease-in;
+}
+
+.btn-services:hover {
+    background-color: #074866;
 }
 
 
