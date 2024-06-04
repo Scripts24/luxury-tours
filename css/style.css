@@ -8,6 +8,7 @@
     border         : none !important;
     box-shadow     : none !important;
     text-decoration: none !important;
+    list-style     : none !important;
 }
 
 html {
@@ -456,10 +457,70 @@ textarea {
     font-size    : 18px;
 }
 
-
 /**FOOTER*/
 
+footer {
+    background-color: #33075c;
+    padding         : 85px 0;
+}
 
+.single-box .logo {
+    width        : 230px;
+    border-radius: 10px;
+}
+
+.single-box p {
+    line-height: 1.9;
+}
+
+.single-box h3 {
+    font-size  : 20px;
+    font-weight: 600;
+}
+
+.single-box h2 {
+    font-size  : 25px;
+    font-weight: 700;
+}
+
+.single-box ul {
+    padding: 0;
+}
+
+.single-box a {
+    color      : #fff !important;
+    line-height: 2;
+}
+
+.input-group input {
+    border-radius: 10px;
+}
+
+.single-box a:hover {
+    color: #ecec81 !important;
+}
+
+#basic-addon2 {
+    background: #a75feb;
+    color     : #fff;
+    cursor    : pointer;
+}
+
+#basic-addon2:hover {
+    background: #ecec81;
+    color     : #0e0d0d;
+}
+
+.socials i {
+    font-size   : 20px;
+    color       : #fff;
+    margin-right: 10px;
+    cursor      : pointer;
+}
+
+.socials i:hover {
+    color: #ebeb2b;
+}
 
 /**MEDIA QUERIES*/
 
@@ -493,5 +554,15 @@ textarea {
 
     .row-last iframe {
         height: 400px;
+    }
+
+    .single-box {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .single-box {
+        margin-bottom: 50px;
     }
 }
