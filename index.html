@@ -358,65 +358,57 @@
         <!--Fin Paquetes-->
 
         <!--Inicio Contacto-->
-        <section class="contact-top_sec py-5" id="contact">
-            <div class="contact-top text-center ">
-                <div class="container">
-                    <h2 class="contact-header fw-bold text-uppercase">Contáctanos</h2>
-                    <p class="contact-text">Deja tu información y nuestro equipo se pondrá en contacto contigo.</p>
+        <section id="contac">
+            <div class="container py-5">
+                <div class="row py-5 g-3">
+                    <div class="col-md-6 first-col bg-white">
+                        <h2 class="text-center mt-4 text-uppercase fw-bold">Contáctanos</h2>
+                        <form class="p-4 my-3" id="contactForm">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                                <input type="number" id="exampleFormControlInput1" class="form-control" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                <textarea type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    required></textarea>
+                            </div>
+                            <div class="mb-3 d-flex justify-content-between">
+                                <button class="btn btn-primary  text-uppercase fw-bold" type="reset">Limpiar</button>
+                                <button class="btn btn-primary text-uppercase fw-bold" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 sec-col">
+                        <img src="img/contacto.jpg" class="img-fluid">
+                    </div>
                 </div>
-            </div>
-            <div class="container">
-                <form id="contactForm" class="contact-form needs-validation" novalidate>
-                    <div class="input-field">
-                        <input type="text" id="fname" class="form-control" required />
-                        <label for="fname">Nombre</label>
-                        <div class="invalid-feedback">
-                            Por favor ingrese su nombre.
-                        </div>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" id="lname" class="form-control" required />
-                        <label for="lname">Apellido</label>
-                        <div class="invalid-feedback">
-                            Por favor ingrese su apellido.
-                        </div>
-                    </div>
-                    <div class="input-field">
-                        <input type="email" id="email" class="form-control" required />
-                        <label for="email">Email</label>
-                        <div class="invalid-feedback">
-                            Por favor ingrese un correo electrónico válido.
-                        </div>
-                    </div>
-                    <div class="input-field">
-                        <input type="tel" id="num" class="form-control" required />
-                        <label for="num">Teléfono</label>
-                        <div class="invalid-feedback">
-                            Por favor ingrese su número de teléfono.
-                        </div>
-                    </div>
-                    <div class="input-field">
-                        <textarea id="message" class="form-control" rows="4" required></textarea>
-                        <label for="message">Consulta</label>
-                        <div class="invalid-feedback">
-                            Por favor ingrese su consulta.
-                        </div>
-                    </div>
-                    <button class="btn submit-btn mb-4 text-uppercase fw-bold" type="reset">Limpiar</button>
-                    <button class="btn submit-btn text-uppercase fw-bold" type="submit">Enviar</button>
-                </form>
+                <div class="col-md-6 row-last">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5987.215179427275!2d2.1443514010751037!3d41.38260963173419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a280d51c4df5%3A0xe1163daab0f5d570!2sAv.%20de%20Roma%2C%20L&#39;Eixample%2C%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1717470798736!5m2!1ses!2sar"
+                        width="520" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
 
-        <!-- Modal -->
+        <!--Modal -->
         <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="thank-you-pop text-center fw-bold">
-                            <h2 class="text-white">Mensaje enviado exitosamente!!</h2>
-                            <p class="text-white">Gracias por escribirnos! Nos pondremos en contacto a la brevedad.</p>
+                            <h2>Mensaje enviado exitosamente!!</h2>
+                            <p>Gracias por escribirnos! Nos pondremos en contacto a la brevedad.</p>
                             <button type="button" class="btn okay" data-bs-dismiss="modal">OK</button>
                         </div>
                     </div>
@@ -434,8 +426,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
-    <!--Validación formulario Bootstrap-->
-    <script src="js/validForm.js"></script>
+    <!--Modal Bootstrap js-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                let modal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+                modal.show();
+                this.reset();
+            });
+        });
+    </script>
     <!--"Country State City API-->
     <script src="js/countriesApi.js"></script>
 </body>
