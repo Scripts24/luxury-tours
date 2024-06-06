@@ -11,6 +11,7 @@
     list-style     : none !important;
 }
 
+/* *SCROLLBAR */
 html {
     scroll-behavior: smooth;
 }
@@ -198,7 +199,7 @@ nav .bi-list:hover {
 
 .about {
     width     : 100%;
-    min-height: 100vh;
+    height    : auto;
     margin-top: 120px;
 }
 
@@ -249,9 +250,9 @@ nav .bi-list:hover {
 /**SERVICIOS*/
 
 .services {
-    width     : 100%;
-    min-height: 100vh;
-    padding   : 10px 0;
+    width  : 100%;
+    height : auto;
+    padding: 24px 0;
 }
 
 .heading-sm {
@@ -259,7 +260,7 @@ nav .bi-list:hover {
 }
 
 .content-services {
-    width        : 250px;
+    width        : 100%;
     height       : auto;
     padding      : 20px 14px;
     margin-bottom: 20px;
@@ -302,9 +303,9 @@ nav .bi-list:hover {
 /**PAQUETES*/
 
 .packages {
-    width     : 100%;
-    min-height: 100vh;
-    padding   : 10px 0;
+    width  : 100%;
+    height : auto;
+    padding: 10px 0;
 }
 
 .content-packages {
@@ -536,7 +537,35 @@ footer .developed {
 
 /**MEDIA QUERIES*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1500px) {
+    .boxes {
+        width: 230px;
+    }
+
+    .navbar-container {
+        top: 65px;
+    }
+
+    .packages {
+        padding: 16px 0;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .heading-about::before {
+        left: 44px;
+        top : 25px;
+    }
+
+    .heading-about::after {
+        right: 44px;
+        top  : 25px;
+    }
+
+    .nav-bar-top {
+        height: 8vh;
+    }
+
     .navbar-container {
         top  : 0;
         left : 0;
@@ -546,6 +575,65 @@ footer .developed {
     .nav-item .nav-link,
     .dropdown-item {
         text-align: center;
+    }
+
+    .selection {
+        position: static;
+        width   : 400px;
+        height  : 70vh;
+        margin  : 84px auto;
+    }
+
+    .selection-container {
+        flex-direction: column;
+        gap           : 45px;
+    }
+
+    .boxes {
+        width: 100%;
+    }
+
+    .select-btn {
+        text-align: center;
+        width     : 100%;
+    }
+
+    .about {
+        margin-bottom: 60px;
+    }
+
+    .para-about {
+        max-width: 760px;
+    }
+
+    .about-img {
+        width : 100%;
+        height: 300px;
+    }
+
+    .heading-content {
+        margin: 16px 0;
+    }
+
+    .para-content-about {
+        font-size: 18px;
+        max-width: 680px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .heading-lg-home {
+        font-size: 1.8rem;
+    }
+
+    .heading-about::before {
+        display: none;
+    }
+
+    .heading-about::after {
+        display: none;
     }
 
     .first-col {
@@ -570,6 +658,10 @@ footer .developed {
 
     .single-box {
         margin-bottom: 50px;
+    }
+
+    .para-about {
+        max-width: 460px;
     }
 }
 
