@@ -147,12 +147,17 @@
 
     <div class="selection">
         <div class="selection-container d-flex justify-content-center align-items-center">
-            <select class="boxes country" aria-label="Default select example" onchange="loadStates()">
-                <option selected>País</option>
-            </select>
-            <select class="cities boxes state" aria-label="Default select example">
-                <option selected>Ciudad</option>
-            </select>
+            <select class="boxes country" onchange="loadStates()">
+    <option selected>País</option>
+</select>
+
+<select class="boxes state" onchange="loadCities()">
+    <option selected>Estado</option>
+</select>
+
+<select class="boxes city">
+    <option selected>Ciudad</option>
+</select>
             <select class="budget boxes">
                 <option value="Presupuesto">Presupuesto</option>
                 <option value="Presupuesto">$200000</option>
